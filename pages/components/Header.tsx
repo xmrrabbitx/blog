@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-// import Image from 'next/image'
-// import Logo from "../../public/logos/logo.png"
+import Image from 'next/image'
+import Logo from "@/public/logos/logo.png"
 import styles from '@/styles/Header.module.css'
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
 
                 <div className='pl-16 flex flow-row'>
                     <div className='justify-left basis-50'>
-                    image
+                    <Image className="inline rounded-md " src={Logo} alt="no logo" width={50}  height={50} />
                     </div>
                     <div className={`${styles.title} ml-3 mt-3.5 items-center basis-2/4`}>
                     Mr Rabbit Blog
