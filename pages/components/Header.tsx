@@ -27,11 +27,11 @@ export default function Header() {
                         <Link className='ml-9' href="/articles">
                             Articles
                         </Link>
-                        <Link className='ml-9' href="">
-                            
+                        <Link className='ml-9' href="/socialmedia">
+                            Social media
                         </Link>
-                        <Link className='ml-9' href="">
-                        
+                        <Link className='ml-9' href="/aboutme">
+                            about me
                         </Link>
                     </span>
                 </div>
