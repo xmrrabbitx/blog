@@ -1,24 +1,35 @@
 import { useState, useEffect } from 'react';
-import API from '../api';
 
 export default function Recent(){
 
-    const [data, setData] = useState(null);
+       //const hand = def();
 
-    useEffect(() => {
-        const fetchData = async () => {
-          const result = await API.get('/recent');
-          setData(result.data);
-        };
-        fetchData();
-      }, []);
+       const [data, setData] = useState([]);
+
+       useEffect(() => {
+              const fetchData = async () => {
+                const res = await fetch('http://localhost:3000/api/recent');
+                const data = await res.json();
+                setData(data);
+              };
+              fetchData();
+            }, []);
 
        return (
         
         <>
-           {data.title}
+        {data.title}
         </>
        )
 
 }
 
+/*
+export async function def(){
+
+       const res = await fetch('http://localhost:3000/api/recent');
+       const data = await res.json();
+
+       return data;
+}
+*/
