@@ -7,14 +7,16 @@ const postsDirectory = path.join(process.cwd(), 'articles');
 //const postFiles = fs.readdirSync('articles');
 
 
-type Data = {
+interface Data  {
     title:string,
     date:string
 }
+
+const data:Data = {title:'how te fetch nft', date:"2020"};
 
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
   ) {
-    res.status(200).json({ title: 'mrrabbit',date:"2020"})
+    res.status(200).json(data)
   }

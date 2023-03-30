@@ -2,34 +2,46 @@ import { useState, useEffect } from 'react';
 
 export default function Recent(){
 
-       //const hand = def();
+       const [data, setData] =  useState<Item[]>([]);
 
-       const [data, setData] = useState([]);
+      const d = def();
+
+     
+  
+       interface Item {
+              title: string;
+              date: string;
+       
+       };
 
        useEffect(() => {
               const fetchData = async () => {
-                const res = await fetch('http://localhost:3000/api/recent');
-                const data = await res.json();
-                setData(data);
+                const response = await fetch('http://localhost:3000/api/recent');
+                const jsonData = await response.json();
+                setData(jsonData);
               };
+          
               fetchData();
             }, []);
+          
+         
 
        return (
         
         <>
-        {data.title}
+             
+             {Object.keys(data).map(key => (
+        <div key={key}>
+          <p>{key}: {data[key]}</p>
+        </div>
+      ))}
+              
         </>
        )
 
 }
 
-/*
 export async function def(){
 
-       const res = await fetch('http://localhost:3000/api/recent');
-       const data = await res.json();
-
-       return data;
+     return "hahahah";
 }
-*/
