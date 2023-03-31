@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-import Lists from './ListPosts';
+// import Lists from './ListPosts';
 
 export default function Recent() {
 
@@ -9,15 +9,15 @@ export default function Recent() {
     [key: string]: string;
   }
 
-  const recentItem:Data = Lists();
+  //const recentItem:Data = Lists();
 
-  /*
+  
   const [recentItem, setRecentItem] = useState<Data>({});
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:3000/api/recent');
+        const response = await fetch('/api/recent');
         const data:any = await response.json();
 
         setRecentItem(data);
@@ -29,11 +29,9 @@ export default function Recent() {
     fetchData();
   }, []);
 
-*/
+
 
   const dataArray:any = Object.entries(recentItem); 
-  // const dataArray:any = Object.entries(recentItem); 
-
 
   const groups = Array.from(
     { length: Math.ceil(dataArray.length / 3) },
