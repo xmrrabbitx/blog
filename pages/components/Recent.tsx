@@ -1,13 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-/*
-interface Item {
-  title: string;
-  description:string
-  date: string;
-}
-*/
+import Lists from './ListPosts';
 
 export default function Recent() {
 
@@ -15,6 +9,9 @@ export default function Recent() {
     [key: string]: string;
   }
 
+  const recentItem:Data = Lists();
+
+  /*
   const [recentItem, setRecentItem] = useState<Data>({});
 
   useEffect(() => {
@@ -32,45 +29,57 @@ export default function Recent() {
     fetchData();
   }, []);
 
+*/
+
   const dataArray:any = Object.entries(recentItem); 
+  // const dataArray:any = Object.entries(recentItem); 
+
 
   const groups = Array.from(
     { length: Math.ceil(dataArray.length / 3) },
     (_, i) => dataArray.slice(i * 3, i * 3 + 3)
   );
 
+
   return (
     <div className="">
       
-    {groups.map((value,key) => (
-      <Link key={key} className='' href={`/articles/${value[0][1]}`}>
-        <div className=' bg-white rounded-md p-4 mt-5'>
-          {value.map((item:any,index:any) => (
-            
-              <div key={index}>
-                {item[0].includes("title-") ? (
+      {groups.map((value,key) => (
+      
+        <Link key={key} className='' href={`/articles/${value[0]?.[1]}`}>
+          
+          <div className=' bg-white rounded-md p-4 mt-5'>
+            {value.map((item:any,index:any) => (
+              
+                <div key={index}>
+                  {item[0].includes("title-") ? (
 
-                  <div className='text-lg font-bold'>
-                    <Link className='hover:text-blue-500' href={`/articles/${item[1]}`}>
-                      
-                      {item[1].replace(/-/g, " ")}
-                      
+                    <div className='text-lg font-bold'>
+                      <Link className='hover:text-blue-500' href={`/articles/${item[1]}`}>
+                        
+                        {item[1].replace(/-/g, " ")}
+                        
                       </Link>
-                  </div>
-                  
-                ):(
+                    </div>
+                    
+                  ):(
 
-                  <div className='text-justify pt-1'>
-                      {item[1]}
-                  </div>
+                    <div className='text-justify pt-1'>
+                        {item[1]}
+                    </div>
 
-                )}
-              </div>
-            
-          ))}
-        </div>
-      </Link>
-    ))}
+                  )}
+                </div>
+              
+
+            ))}
+          </div>
+
+        
+        </Link>
+      
+
+      ))}
 
     </div>
   );

@@ -21,6 +21,7 @@ export default function handler(
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents);
 
+    
     const len = (((Object.keys(matterResult.data).length)/3)-1);
     const lis:any = {};
 
