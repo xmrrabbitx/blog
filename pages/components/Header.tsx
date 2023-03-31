@@ -10,7 +10,7 @@ export default function Header() {
             <div className='container max-w-full' >
             <div className='grid grid-cols-2 gap-1 mt-10'> 
 
-                <div className='pl-16 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 flex flow-row'>
+                <div className='pl-16  lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 flex flow-row'>
                     <div className='justify-left basis-50'>
                     <Image className="inline rounded-md " src={Logo} alt="no logo" width={50}  height={50} />
                     </div>
@@ -19,7 +19,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className='w-12/12 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 pr-28 pt-5 text-base flex justify-end'>
+                <div className='w-12/12 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 lg:pr-28 pt-5 text-base flex lg:justify-end justify-center '>
                     <span>
                         <Link href="/">
                             Home

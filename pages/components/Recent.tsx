@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-
+import Lists from "./ListPosts"
 
 export default function Recent() {
 
@@ -9,7 +9,15 @@ export default function Recent() {
     [key: string]: string;
   }
 
+  //const recentItem = Lists();
+  const [recentItem, setRecentItem] = useState<Data>({});
   
+  useEffect(() => {
+    const listData = Lists(); // Call the component function and get the data
+    setRecentItem(listData); // Store the data in the state
+  }, []);
+
+/*
   const [recentItem, setRecentItem] = useState<Data>({});
 
   useEffect(() => {
@@ -26,7 +34,7 @@ export default function Recent() {
     }
     fetchData();
   }, []);
-
+*/
 
   const dataArray:any = Object.entries(recentItem); 
 
@@ -37,43 +45,40 @@ export default function Recent() {
 
 
   return (
-    <div className="">
+    <div className=""  key="recent">
       
       {groups.map((value,key) => (
-      
         <Link key={key} className='' href={`/articles/${value[0]?.[1]}`}>
           
-          <div className=' bg-white rounded-md p-4 mt-5'>
-            {value.map((item:any,index:any) => (
-              
-                <div key={index}>
-                  {item[0].includes("title-") ? (
+        <div className=' bg-white rounded-md p-4 mt-5'>
+          {value.map((item:any,index:any) => (
+            
+              <div key={index}>
+                {item[0].includes("title-") ? (
 
-                    <div className='text-lg font-bold'>
-                      <Link className='hover:text-blue-500' href={`/articles/${item[1]}`}>
-                        
-                        {item[1].replace(/-/g, " ")}
-                        
-                      </Link>
-                    </div>
-                    
-                  ):(
+                  <div className='text-lg font-bold'>
+                    <Link  key={index} className='hover:text-blue-500' href={`/articles/${item[1]}`}>
+                      
+                      {item[1].replace(/(?:^|\-)(\w)/g, (match: string) => match.toUpperCase()).replace(/\-/g, ' ')}
+                      
+                    </Link>
+                  </div>
+                  
+                ):(
 
-                    <div className='text-justify pt-1'>
-                        {item[1]}
-                    </div>
+                  <div className='text-justify pt-1'>
+                      {item[1]}
+                  </div>
 
-                  )}
-                </div>
-              
+                )}
+              </div>
+            
 
-            ))}
-          </div>
+          ))}
+        </div>
 
-        
-        </Link>
       
-
+      </Link>
       ))}
 
     </div>

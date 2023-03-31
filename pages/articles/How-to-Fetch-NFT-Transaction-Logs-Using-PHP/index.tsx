@@ -10,7 +10,6 @@ import iconIco from "@/public/logos/logo.ico"
 
 export default function howToFetchNfts(){
 
-
     return(
 
         <div>
@@ -21,11 +20,11 @@ export default function howToFetchNfts(){
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
-            <div className="container">
-                <div className="text-center mt-16 text-3xl font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
+            <div className="container max-w-full">
+                <div className="text-center mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
                 <div className="w-12/12 grid grid-cols-6 mt-10"> 
-                    <div className="col-span-1"></div>
-                    < div className="col-span-4 p-5 text-justify text-xl border-2 border-dashed border-amber-500 leading-8">
+                    <div className="lg:col-span-1 col-span-0"></div>
+                    < div className="lg:col-span-4 col-span-6 p-5 lg:m-0 m-5 text-justify text-xl border-2 border-dashed border-amber-500 leading-8">
                         
                         <Paragraph text="You may have experienced entering an NFT market and wanting to find out the number of people who have transferred a specific NFT. Some markets put the transaction history information of each NFT on the website, but some do not. Perhaps one of the reasons is the high volume of transactions made on each smart contract." />
                         <Paragraph text={<>If the latter is the case, then the second option in front of you is the <Link className="text-blue-500" href="https://etherscan.io/">Etherscan.io</Link> website. This website makes it easier for us to track NFT smart contracts. It is a very powerful tool, but it is not enough. When you want to check an NFT with a specific ID, you will have a problem, although it provides the possibility of filtering transactions based on specific event signatures such as transfer or approval but not more detailed filtering! Especially if you are in the web development space and need non-graphical tools.</>} />
@@ -213,7 +212,7 @@ array(1) {
     <Paragraph text={<>if you have any questions, feel free to ask me in the comment section ^__^</>}/>
 
                     </div>
-                    <div className="col-span-1"></div>
+                    <div className="lg:col-span-1 col-span-0"></div>
                 </div>
             </div>
         </div>

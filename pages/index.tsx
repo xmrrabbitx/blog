@@ -28,7 +28,7 @@ export default function Home() {
           <div className='w-12/12 text-center grid grid-cols-3'>
               <div className=' lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
               </div>
-              <div className='lg:ml-0 lg:mr-5 ml-5 mr-5 lg:col-span-1 md:col-span-1 sm:col-span-3 col-span-3'>
+              <div className='lg:col-span-1 lg:ml-0 lg:mr-0 ml-5 mr-5 md:col-span-3 md:mlr-5 sm:col-span-3 col-span-3'>
                 <Recent />
               </div>
               <div className='lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
@@ -38,6 +38,7 @@ export default function Home() {
        
       
       </div>
+      
     </>
   )
 }
