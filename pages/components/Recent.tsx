@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-// import Lists from './ListPosts';
+
 
 export default function Recent() {
 
   interface Data {
     [key: string]: string;
   }
-
-  //const recentItem:Data = Lists();
 
   
   const [recentItem, setRecentItem] = useState<Data>({});
@@ -28,7 +26,6 @@ export default function Recent() {
     }
     fetchData();
   }, []);
-
 
 
   const dataArray:any = Object.entries(recentItem); 
