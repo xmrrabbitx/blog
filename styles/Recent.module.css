@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family:Poppins-semiBold;
+    src: url("../public/fonts/Poppins/Poppins-SemiBold.ttf");
+    font-family:Poppins-Bold;
+    src: url("../public/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+
+
+.title{
+
+    font-family: Poppins-Bold;
+
+}

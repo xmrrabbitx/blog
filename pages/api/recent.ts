@@ -3,20 +3,49 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const postsDirectory = path.join(process.cwd(), 'articles');
-//const postFiles = fs.readdirSync('articles');
+const articlesDirectory = path.join(process.cwd(), 'pages/articles')
 
-
-interface Data  {
+type Data = {
     title:string,
+    description:string,
     date:string
 }
 
-const data:Data = {title:'how te fetch nft', date:"2020"};
 
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<Data>
+    res: NextApiResponse
   ) {
-    res.status(200).json(data)
+
+    const fullPath = path.join(articlesDirectory, `articles.md`)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const matterResult = matter(fileContents);
+
+    const len = (((Object.keys(matterResult.data).length)/3)-1);
+    const lis:any = {};
+
+    if(len >= 10){
+      
+      for(let i=len;i>(len - 10);i--){
+          
+        
+        lis["title-" + i] = matterResult.data["title-" + i];
+        lis["description-" + i] = matterResult.data["description-" + i];
+        lis["date-" + i] = matterResult.data["date-" + i];
+          
+      }
+
+    }else{
+
+      for(let i=len;i>=0;i--){
+          
+      
+        lis["title-" + i] = matterResult.data["title-" + i];
+        lis["description-" + i] = matterResult.data["description-" + i];
+        lis["date-" + i] = matterResult.data["date-" + i];
+          
+      }
+    }
+
+    res.status(200).json(lis)
   }
