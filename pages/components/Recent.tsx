@@ -42,10 +42,10 @@ export default function Recent() {
   return (
     <div className="">
       
-    {groups.map((value,key) => (
+    {groups.map((value) => (
       <Link className='' href={`/articles/${value[0][1]}`}>
         <div className=' bg-white rounded-md p-4 mt-5'>
-          {value.map((item:any,index:any) => (
+          {value.map((item:any) => (
             
               <div>
                 {item[0].includes("title-") ? (
