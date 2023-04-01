@@ -69,7 +69,7 @@ export function AllList(){
 
   const len = (((Object.keys(matterResult.data).length)/3)-1);
   const lis:any = {};
-  for(let i=0;i<=len;i++){
+  for(let i=len;i>=0;i--){
 
     lis["title-" + i] = matterResult.data["title-" + i];
     lis["description-" + i] = matterResult.data["description-" + i];
