@@ -16,6 +16,8 @@ export default function Home() {
             <meta name="description" content="Mr Rabbit Personal Blog _ I will talk about Web3 and Blockchain" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/logos/logo.ico" />
+
+      
           </Head>
         
        <div className='container max-w-full'>

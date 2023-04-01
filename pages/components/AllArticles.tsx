@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-import {RecentList} from "../../lib/ListRecentPosts"
+import { AllList } from '@/lib/ListRecentPosts';
 
-export default function Recent() {
+
+export default function AllArticles() {
 
   interface Data {
     [key: string]: string;
@@ -13,28 +14,9 @@ export default function Recent() {
   const [recentItem, setRecentItem] = useState<Data>({});
   
   useEffect(() => {
-    const listData = RecentList(); // Call the component function and get the data
+    const listData = AllList(); // Call the component function and get the data
     setRecentItem(listData); // Store the data in the state
   }, []);
-
-/*
-  const [recentItem, setRecentItem] = useState<Data>({});
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch('http://localhost:3000/api/recent');
-        const data:any = await response.json();
-
-        setRecentItem(data);
-
-      } catch (error) {
-        console.log('Error fetching data:', error);
-      }
-    }
-    fetchData();
-  }, []);
-*/
 
   const dataArray:any = Object.entries(recentItem); 
 
@@ -43,6 +25,7 @@ export default function Recent() {
     (_, i) => dataArray.slice(i * 3, i * 3 + 3)
   );
 
+  console.log(groups);
 
   return (
     <div className=""  key="recent">
@@ -80,6 +63,7 @@ export default function Recent() {
       
       </Link>
       ))}
+
 
     </div>
   );

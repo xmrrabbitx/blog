@@ -1,5 +1,5 @@
 import React from 'react';
-import Recent from '../components/Recent';
+import AllArticles from '../components/AllArticles';
 
 function IndexPage() {
 
@@ -9,14 +9,14 @@ function IndexPage() {
         <div className='grid grid-cols-1'>
           <div className='w-12/12'>
             <h2 className='text-center mt-10 text-xl font-semibold'>
-              Recent Articles
+              All Articles
             </h2>
           </div>
           <div className='w-12/12 text-center grid grid-cols-3'>
               <div className=' lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
               </div>
               <div className='lg:col-span-1 lg:ml-0 lg:mr-0 ml-5 mr-5 md:col-span-3 md:mlr-5 sm:col-span-3 col-span-3'>
-                <Recent />
+                <AllArticles />
               </div>
               <div className='lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
               </div>

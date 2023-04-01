@@ -11,7 +11,7 @@ export default function CodeBlock(props:{title:string,code:any,description:strin
     }
     
     return(
-        <div className="bg-zinc-900 rounded p-3 text-base mt-2">
+        <div className="bg-zinc-900 rounded p-3 lg:text-base md:text-base text-xs mt-2">
             <div className="text-green-400">{props.title}</div>
 
             <div className="flex flex-row">
