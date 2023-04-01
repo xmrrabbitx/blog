@@ -4,9 +4,9 @@ import Link from "next/link"
 import CodeBlock from "@/pages/components/CodeBlock"
 import Paragraph from "@/pages/components/Paragraph"
 import Image from "next/image"
-import koalaPic from "@/public/pics/kuddle koala 6466.jpeg"
+import koalaPic from "@/public/pics/how-to-fetch-nft-transaction-logs-using-php/kuddle koala 6466.jpeg"
 import iconIco from "@/public/logos/logo.ico"
-
+import HeaderPic from "@/public/pics/how-to-fetch-nft-transaction-logs-using-php/HeaderPic.jpeg"
 
 export default function howToFetchNfts(){
 
@@ -21,11 +21,13 @@ export default function howToFetchNfts(){
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
             <div className="container max-w-full">
-                <div className="text-center mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-lg font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
+                <div className="lg:text-center md:text-center sm:text-center text-left pl-5 pr-5 mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
                 <div className="w-12/12 grid grid-cols-6 mt-10"> 
                     <div className="lg:col-span-1 col-span-0"></div>
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
                         
+                        <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture of koala"} />
+
                         <Paragraph text="You may have experienced entering an NFT market and wanting to find out the number of people who have transferred a specific NFT. Some markets put the transaction history information of each NFT on the website, but some do not. Perhaps one of the reasons is the high volume of transactions made on each smart contract." />
                         <Paragraph text={<>If the latter is the case, then the second option in front of you is the <Link className="text-blue-500" href="https://etherscan.io/">Etherscan.io</Link> website. This website makes it easier for us to track NFT smart contracts. It is a very powerful tool, but it is not enough. When you want to check an NFT with a specific ID, you will have a problem, although it provides the possibility of filtering transactions based on specific event signatures such as transfer or approval but not more detailed filtering! Especially if you are in the web development space and need non-graphical tools.</>} />
                         <Paragraph text={<>The third way is to use the Web3 library. Unfortunately, most <Link className="text-blue-500" href="https://github.com/web3p/web3.php">web3 php</Link> libraries are not stable and do not have features as good as web3js.</>} />
@@ -209,7 +211,7 @@ array(1) {
     
     <Paragraph text={<>You can access other functions of the NFT History Logs library <Link className="text-blue-500" href={"https://github.com/web3p/web3.php#usage"}>here</Link></>}/>
     
-    <Paragraph text={<>if you have any questions, feel free to ask me in the comment section ^__^</>}/>
+    <Paragraph text={<>if you have any questions, feel free to ask me via social media ^__^</>}/>
 
                     </div>
                     <div className="lg:col-span-1 col-span-0"></div>

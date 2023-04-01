@@ -25,15 +25,13 @@ export default function AllArticles() {
     (_, i) => dataArray.slice(i * 3, i * 3 + 3)
   );
 
-  console.log(groups);
-
   return (
     <div className=""  key="recent">
       
       {groups.map((value,key) => (
         <Link key={key} className='' href={`/articles/${value[0]?.[1]}`}>
           
-        <div className=' bg-white rounded-md p-4 mt-5'>
+        <div className=' bg-white rounded-md p-4 mt-5 drop-shadow-sm'>
           {value.map((item:any,index:any) => (
             
               <div key={index}>
