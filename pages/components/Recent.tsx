@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Recent.module.css'
 import Link from 'next/link';
-import Lists from "./ListPosts"
+import {Lists} from "../../lib/ListPosts"
 
 export default function Recent() {
 
@@ -9,7 +9,7 @@ export default function Recent() {
     [key: string]: string;
   }
 
-  //const recentItem = Lists();
+
   const [recentItem, setRecentItem] = useState<Data>({});
   
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Recent() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/recent');
+        const response = await fetch('http://localhost:3000/api/recent');
         const data:any = await response.json();
 
         setRecentItem(data);

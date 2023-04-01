@@ -1,0 +1,8 @@
+/*
+  const [recentItem, setRecentItem] = useState<Data>({});
+  
+  useEffect(() => {
+    const listData = Lists(); // Call the component function and get the data
+    setRecentItem(listData); // Store the data in the state
+  }, []);
+*/
