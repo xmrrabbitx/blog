@@ -3,15 +3,19 @@
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
        <loc>https://blog.mrrabbit.info</loc>
-       <lastmod>2023-01-04</lastmod>
+       <lastmod>04-01-2023</lastmod>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles</loc>
-       <lastmod>2023-01-04</lastmod>
+       <lastmod>04-01-2023</lastmod>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-fetch-nft-transaction-logs-using-php</loc>
-       <lastmod>2023-01-04</lastmod>
+       <lastmod>04-01-2023</lastmod>
+     </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/how-to-rank-top-selling-nfts-using-php</loc>
+       <lastmod>04-01-2023</lastmod>
      </url>
    </urlset>
    </xml>
