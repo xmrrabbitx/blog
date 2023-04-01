@@ -21,7 +21,7 @@ export default function howToFetchNfts(){
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
             <div className="container max-w-full">
-                <div className="text-center mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-sm font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
+                <div className="text-center mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-lg font-bold">How to Fetch NFT Transaction Logs Using PHP</div>
                 <div className="w-12/12 grid grid-cols-6 mt-10"> 
                     <div className="lg:col-span-1 col-span-0"></div>
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
