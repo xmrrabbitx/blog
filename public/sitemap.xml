@@ -6,25 +6,25 @@
      
      <url>
        <loc>https://blog.mrrabbit.info</loc>
-       <lastmod>2023-04-01T23:52:51+00:00</lastmod>
+       <lastmod>2023-04-03T23:52:51+00:00</lastmod>
        <changefreq>daily</changefreq>
         <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles</loc>
-       <lastmod>2023-04-01T23:52:51+00:00</lastmod>
+       <lastmod>2023-04-03T23:52:51+00:00</lastmod>
        <changefreq>daily</changefreq>
         <priority>0.80</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-fetch-nft-transaction-logs-using-php</loc>
-       <lastmod>2023-04-01T23:52:51+00:00</lastmod>
+       <lastmod>2023-04-03T23:52:51+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-rank-top-selling-nfts-using-php</loc>
-       <lastmod>2023-04-01T23:52:51+00:00</lastmod>
+       <lastmod>2023-04-03T23:52:51+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
