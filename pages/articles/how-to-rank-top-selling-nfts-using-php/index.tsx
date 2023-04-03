@@ -19,7 +19,7 @@ export default function howToFetchNfts(){
             
             <Head>
                 <title>How to Rank Top-Selling NFTs Using PHP</title>
-                <meta name="description" content="how to access Ethereum Netwok easily using php " />
+                <meta name="description" content="how to access Ethereum Netwok easily using php" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
