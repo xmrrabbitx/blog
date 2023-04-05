@@ -35,12 +35,12 @@ export default function index(){
                     <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture of koala"} />
 
                     
-                    <Paragraph text={<>If you have read my previous articles, you will notice that the previous version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs"> NFT history logs </Link> library didn't support the top-selling built-in function to retrieve these kinds of logs. but in the latest update, we can now retrieve as many top-selling NFT tokens from a specific contract address as we want in just one line of code.</>} />
-                    <Paragraph text={<>You will retrieve the top 10 selling NFTs in five stages:
+                    <Paragraph text={<>If you have read my previous articles, you will notice that the previous version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs"> NFT history logs </Link> library didnt support the top-selling built-in function to retrieve these kinds of logs. but in the latest update, we can now retrieve as many top-selling NFT tokens from a specific contract address as we want in just one line of code.</>} />
+                    <Paragraph text={<>You will retrieve the top 10 selling NFTs in five stages: <br />
 
-1. sign up on the infura website 
+1. sign up on the infura website <br />
 
-2. setup the provider for the nft history logs library 
+2. setup the provider for the nft history logs library <br />
 
 3. retrieve the top 10 selling NFT in one line of code.</>} />
 

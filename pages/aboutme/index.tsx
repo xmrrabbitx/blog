@@ -25,7 +25,7 @@ export default function index(){
                     < div className="flex flex-grid gap-4 lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
 
                         <Image className='rounded-md' src={profile} alt='no profile' width={200} height={200}/>
-                        <Paragraph text={<>I'm Hadi Mirzaie, called Mr. Rabbit, a programmer interested in blockchain.  I write about Web3 and PHP, and sometimes I do the hardest thing of all: thinking. Animal lovers mostly loved Kitty ^__^ .  My expertise is in php, laravel, JS, NextJS, and Tailwind.</>}/>
+                        <Paragraph text={<>Im Hadi Mirzaie, called Mr. Rabbit, a programmer interested in blockchain. <br /> I write about Web3 and PHP, and sometimes I do the hardest thing of all: thinking. Animal lovers mostly loved Kitty ^__^ . <br /> My expertise is in php, laravel, JS, NextJS, and Tailwind.</>}/>
                         
                         
                     </div>
