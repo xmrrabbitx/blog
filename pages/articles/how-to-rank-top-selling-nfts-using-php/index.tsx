@@ -11,7 +11,7 @@ import HeaderPic from "@/public/pics/how-to-rank-top-selling-nfts-using-php/Head
 import iconIco from "@/public/logos/logo.ico"
 
 
-export default function howToFetchNfts(){
+export default function index(){
 
     return(
 
@@ -19,7 +19,7 @@ export default function howToFetchNfts(){
             
             <Head>
                 <title>How to Rank Top-Selling NFTs Using PHP</title>
-                <meta name="description" content="how to access Ethereum Netwok easily using php" />
+                <meta name="description" content="Can we identify the top most selling nft information in a smart contract?" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>

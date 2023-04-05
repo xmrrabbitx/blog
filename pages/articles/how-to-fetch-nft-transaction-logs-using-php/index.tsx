@@ -8,7 +8,7 @@ import koalaPic from "@/public/pics/how-to-fetch-nft-transaction-logs-using-php/
 import iconIco from "@/public/logos/logo.ico"
 import HeaderPic from "@/public/pics/how-to-fetch-nft-transaction-logs-using-php/HeaderPic.jpeg"
 
-export default function howToFetchNfts(){
+export default function index(){
 
     return(
 
