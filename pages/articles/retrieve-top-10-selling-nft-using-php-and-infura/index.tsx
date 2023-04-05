@@ -26,7 +26,7 @@ export default function index(){
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
             <div className="container max-w-full">
-                <div className="lg:text-center md:text-center sm:text-center text-left pl-5 pr-5 mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">How to Rank Top-Selling NFTs Using PHP</div>
+                <div className="lg:text-center md:text-center sm:text-center text-left pl-5 pr-5 mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">Retrieve Top 10 selling Nfts Using PHP and Infura</div>
                 <div className="w-12/12 grid grid-cols-6 mt-10"> 
                     <div className="lg:col-span-1 col-span-0"></div>
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
@@ -40,7 +40,7 @@ export default function index(){
 
 1. sign up on the infura website<br />
 
-2. setup the provider for the nft log history library<br />
+2. setup the provider for the nft history logs library<br />
 
 3. retrieve the top 10 selling NFT in one line of code.</>} />
 
@@ -62,7 +62,7 @@ export default function index(){
 
                     <Image className="rounded max-w-full w-full" src={ethEndpoint} alt={"no picture of infura"} />
 
-                    <Paragraph text={<>Now it's time to use the real magic. Install the latest version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs">NFT history logs library</Link>: <CodeBlock title="" code={String.raw`composer require nfthistory/nfthistorylogs dev-master`} description="" />  </>} />
+                    <Paragraph text={<>Now it's time to use the real magic. Install the latest version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs#installation">NFT history logs library</Link>: <CodeBlock title="" code={String.raw`composer require nfthistory/nfthistorylogs dev-master`} description="" />  </>} />
                     
                     <Paragraph text={<>Then import it like this:<CodeBlock title="" code={String.raw`<?php
 
@@ -70,7 +70,7 @@ require 'vendor/autoload.php'
 
 use Nft\History\nftHistory;`} description="" /></>} />
 
-<Paragraph text={<>Then, insert the contract address you want and set the provider:<CodeBlock title="" code={String.raw`$contractAddress = '0x00B3e138c6e4b233e5DDed8CfeD200f0c82B536c';
+<Paragraph text={<>Then, insert the contract address you want and paste the provider URL that you copied from the Infura website:<CodeBlock title="" code={String.raw`$contractAddress = '0x00B3e138c6e4b233e5DDed8CfeD200f0c82B536c';
 $provider = 'https://mainnet.infura.io/v3/<YOUR API KEY>';`} description="" /></>} />
 
 <Paragraph text={<>In this step, create an instance of the nftHistory object:<CodeBlock title="" code={String.raw`$nfthistory = new nftHistory($contractAdress, $provider);`} description="" /></>} />

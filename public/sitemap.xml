@@ -28,5 +28,11 @@
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/retrieve-top-10-selling-nft-using-php-and-infura</loc>
+       <lastmod>2023-04-05</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.80</priority>
+     </url>
      
   </urlset>
