@@ -11,7 +11,7 @@ import createApi from "@/public/pics/retrieve-top-10-selling-nft-using-php-and-i
 import ethEndpoint from "@/public/pics/retrieve-top-10-selling-nft-using-php-and-infura/ethEndpoint.jpeg"
 
 import iconIco from "@/public/logos/logo.ico"
-
+// eslint-disable-next-line react/no-unescaped-entities
 
 export default function index(){
 
