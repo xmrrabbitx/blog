@@ -3,3 +3,8 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://blog.mrrabbit.info/sitemap.xml
