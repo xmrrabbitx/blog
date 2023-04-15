@@ -9,7 +9,7 @@ function IndexPage() {
     <>
      <Head>
             <title>Mr Rabbit Blog - Articles</title>
-            <meta name="description" content="Mr Rabbit Personal Blog _ I will talk about Web3 and Blockchain" />
+            <meta name="description" content="Mr Rabbit Personal Blog _ I talk about php and web3" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/logos/logo.ico" />
           </Head>
