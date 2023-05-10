@@ -30,7 +30,7 @@ export default function index(){
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
                         
 
-                    <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture of koala"} />
+                    <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture"} />
 
                     
                     <Paragraph text={<>Well, we know that NFTs are transactions with special token IDs in the Ethereum logs.</>} />
@@ -49,7 +49,7 @@ use Nft\History\nftHistory;`} description="" /></>} />
 $provider = 'https://cloudflare-eth.com';`} description="" /></>} />
                     <Paragraph text={<>I used this contract address, 0x00B3e138c6e4b233e5DDed8CfeD200f0c82B536c, which belongs to The Boy who lost his mind Open Edition by Boss Logic. It is a collection of 82 NFTs at this smart contract address.</>} />
                     <Paragraph text={<>In this article, I want to list the top sales of NFTs using this contract address as a sample.</>} />
-                    <Image className="rounded" src={BoyPic} alt={"no picture of koala"} />
+                    <Image className="rounded" src={BoyPic} alt={"no picture"} />
                     <Paragraph text={<>I used the free Cloudflare provider, but you could use your desired provider with an API key.</>} />
                     <Paragraph text={<>In this step, create an instance of the nftHistory object:<CodeBlock title="" code={String.raw`$nfthistory = new nftHistory($contractAdress, $provider);`} description="" /></>} />
                     <Paragraph text={<>Next, call the getAllTransferTrxHashAndIds() function:<CodeBlock title="" code={String.raw`$trxHash = $nfthistory->getAllTransferTrxHashAndIds();`} description="" /></>} />
@@ -154,7 +154,7 @@ array(82) {
 `} description="" /></>} />
                     <Paragraph text={<>The above output is the list of the top 10 selling NFTs. in order to be sure about these numbers, first go to this page to search for the first token id (19400010142). Put this number in the search section to access the transaction list of this token id.</>} />
 
-                    <Image className="rounded" src={TrxLisPic} alt={"no picture of koala"} />
+                    <Image className="rounded" src={TrxLisPic} alt={"no picture"} />
 
 
                     <Paragraph text={<>As you can see, this token ID is transferred twice. If you click on every transaction hash and go to the “value” section, you can see the price of the trade. The first one is 0.4 Ether, and the second one is 0.</>} />

@@ -32,7 +32,7 @@ export default function index(){
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
                         
 
-                    <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture of koala"} />
+                    <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture"} />
 
                     
                     <Paragraph text={<>If you have read my previous articles, you will notice that the previous version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs"> NFT history logs </Link> library didnt support the top-selling built-in function to retrieve these kinds of logs. but in the latest update, we can now retrieve as many top-selling NFT tokens from a specific contract address as we want in just one line of code.</>} />
@@ -48,19 +48,19 @@ export default function index(){
 
                     <Paragraph text={<>First of all, sign up for free in <Link className="text-blue-500" href="https://www.infura.io/">Infura</Link>:</>} />
 
-                    <Image className="rounded max-w-full w-full" src={infuraSignup} alt={"no picture of infura"} />
+                    <Image className="rounded max-w-full w-full" src={infuraSignup} alt={"no picture"} />
 
                     <Paragraph text={<>then create a new API key:</>} />
 
-                    <Image className="rounded max-w-full w-full" src={apiKey} alt={"no picture of infura"} />
+                    <Image className="rounded max-w-full w-full" src={apiKey} alt={"no picture"} />
 
                     <Paragraph text={<>Choose Web3 API and name your project:</>} />
 
-                    <Image className="rounded max-w-full w-full" src={createApi} alt={"no picture of infura"} />
+                    <Image className="rounded max-w-full w-full" src={createApi} alt={"no picture"} />
 
                     <Paragraph text={<>Copy the url of Ethereum's mainnet. Do not share the API key with anyone.</>} />
 
-                    <Image className="rounded max-w-full w-full" src={ethEndpoint} alt={"no picture of infura"} />
+                    <Image className="rounded max-w-full w-full" src={ethEndpoint} alt={"no picture"} />
 
                     <Paragraph text={<>Now it's time to use the real magic. Install the latest version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs#installation">NFT history logs library</Link>: <CodeBlock title="" code={String.raw`composer require nfthistory/nfthistorylogs dev-master`} description="" />  </>} />
                     

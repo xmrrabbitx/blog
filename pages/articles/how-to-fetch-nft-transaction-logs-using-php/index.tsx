@@ -26,7 +26,7 @@ export default function index(){
                     <div className="lg:col-span-1 col-span-0"></div>
                     < div className="lg:col-span-4 col-span-6 lg:p-5 md:p-5 sm:p-5 p-2 lg:m-0 md:m-0 sm:m-0 m-2 text-justify border-2 border-dashed border-amber-500 leading-8">
                         
-                        <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture of koala"} />
+                        <Image className="rounded max-w-full w-full" src={HeaderPic} alt={"no picture"} />
 
                         <Paragraph text="You may have experienced entering an NFT market and wanting to find out the number of people who have transferred a specific NFT. Some markets put the transaction history information of each NFT on the website, but some do not. Perhaps one of the reasons is the high volume of transactions made on each smart contract." />
                         <Paragraph text={<>If the latter is the case, then the second option in front of you is the <Link className="text-blue-500" href="https://etherscan.io/">Etherscan.io</Link> website. This website makes it easier for us to track NFT smart contracts. It is a very powerful tool, but it is not enough. When you want to check an NFT with a specific ID, you will have a problem, although it provides the possibility of filtering transactions based on specific event signatures such as transfer or approval but not more detailed filtering! Especially if you are in the web development space and need non-graphical tools.</>} />
@@ -54,7 +54,7 @@ $NftHistory = new nftHistory($contractAdress, $provider);`} description=""/></>}
                      
                     <Paragraph text={<>Here I used Kuddle Koala smart contract #6466. Its smart contract address is 0x7F0159D3A639a035797e92861d9F414246735568 and its token ID is 6466.</>} />   
 
-                    <Image className="rounded" src={koalaPic} alt={"no picture of koala"} />
+                    <Image className="rounded" src={koalaPic} alt={"no picture"} />
 
                     <Paragraph text={<>This token has actually been transferred between two people (two addresses), and the meaning of this transfer is nothing more than the sale of an NFT to another person. We know that NFTs are unique entities, so we have one Kuddle Koala token with ID 6466; the rest of the NFTs have different IDs.</>}/>
 
