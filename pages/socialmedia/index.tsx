@@ -43,7 +43,7 @@ export default function index(){
                         <div className='grid-cols-1 text-center'>
                             
                             <FontAwesomeIcon style={{width:"50px", height:"50px", color:"#e83a23"}} icon={faGoogle} /> <br />
-                            <Link className='hover:text-blue-500 font-bold' href={"mailto:hadi.mirzaie300@gmail.com"}>Gmail</Link>
+                            <Link className='hover:text-blue-500 font-bold' href={"mailto:xmrrabbitx@gmail.com"}>Gmail</Link>
 
 
                         </div>
