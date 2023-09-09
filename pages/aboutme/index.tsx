@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Me.module.css'
-import profile from "@/public/pics/aboutme/profile.png"
+import profile from "@/public/pics/aboutme/profile.jpeg"
 import Paragraph from '../components/Paragraph'
 
 
