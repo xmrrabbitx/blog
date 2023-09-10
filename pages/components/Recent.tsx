@@ -48,18 +48,18 @@ export default function Recent() {
     <div className=""  key="recent">
       
       {groups.map((value,key) => (
-        <Link key={key} className='' href={`/articles/${value[0]?.[1]}`}>
-          
+        <Link key={key} className='' href={`/articles/${value[0]?.[1].replace(/[^a-zA-Z0-9-]/g, '')}`}>
+
         <div className=' bg-white rounded-md p-4 mt-5 drop-shadow-sm'>
           {value.map((item:any,index:any) => (
             
               <div key={index}>
                 {item[0].includes("title-") ? (
-
+             
                   <div className='lg:text-lg md:text-lg sm:text-base text-base font-bold'>
-                    <Link  key={index} className='hover:text-blue-500' href={`/articles/${item[1]}`}>
-                      
-                      {item[1].replace(/(?:^|\-)(\w)/g, (match: string) => match.toUpperCase()).replace(/\-/g, ' ')}
+                    <Link  key={index} className='hover:text-blue-500' href={`/articles/${item[1].replace(/[^a-zA-Z0-9-]/g, '')}`}>
+                   
+                    {item[1].replace(/(?:^|\-)(\w)/g, (match: string) => match.toUpperCase()).replace(/\-/g, ' ')}
                       
                     </Link>
                   </div>

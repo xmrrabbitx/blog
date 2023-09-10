@@ -22,7 +22,7 @@ const matterResult:any = {"content":"",
     "title-3":"introduction-to-dvote-polygon-library-a-tutorial",
     "description-3":"If you're looking to create decentralized voting applications on the Polygon network, dvote-polygon is a TypeScript library that can help you get started",
     "date-3":"05-10-2023",
-    "title-4":"tarpit-of-ideas-how-can-we-know-a-startup-idea-is-a-good-idea",
+    "title-4":"tarpit-of-ideas:-how-can-we-know-a-startup-idea-is-a-good-idea?",
     "description-4":"A tarpit is a place with water and mud where animals become entangled...",
     "date-4":"10-09-2023",
 
