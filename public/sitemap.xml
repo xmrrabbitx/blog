@@ -40,4 +40,10 @@
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/tarpit-of-ideas-how-can-we-know-a-startup-idea-is-a-good-idea</loc>
+       <lastmod>2023-09-10</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.80</priority>
+     </url>
   </urlset>
