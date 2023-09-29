@@ -62,7 +62,7 @@ export default function index(){
 
                     <Image className="rounded max-w-full w-full" src={ethEndpoint} alt={"no picture"} />
 
-                    <Paragraph text={<>Now it's time to use the real magic. Install the latest version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs#installation">NFT history logs library</Link>: <CodeBlock title="" code={String.raw`composer require nfthistory/nfthistorylogs dev-master`} description="" />  </>} />
+                    <Paragraph text={<>Now it's time to use the real magic. Install the latest version of the <Link className="text-blue-500" href="https://github.com/xmrrabbitx/NftHistoryLogs#installation">NFT history logs library</Link>: <CodeBlock title="" code={String.raw`composer require nfthistory/nfthistorylogs`} description="" />  </>} />
                     
                     <Paragraph text={<>Then import it like this:<CodeBlock title="" code={String.raw`<?php
 
