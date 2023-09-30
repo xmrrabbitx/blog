@@ -22,7 +22,7 @@ export default function index(){
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logos/logo.ico" />
             </Head>
-            <div className="container max-w-full">
+            <div className="container max-w-full flex ">
                 <div className="lg:text-center md:text-center sm:text-center text-left pl-5 pr-5 mt-16 lg:text-3xl md:text-3xl sm:text-2xl text-xl font-bold">How can we contact Mr. Rabbit?</div>
                 <div className="w-12/12 grid grid-cols-6 mt-10"> 
                     <div className="lg:col-span-1 col-span-0"></div>
@@ -35,23 +35,9 @@ export default function index(){
 
                         </div>
                         <div className='grid-cols-1 text-center'>
-
-                            <FontAwesomeIcon style={{width:"50px", height:"50px", color:"#0e83db"}} icon={faTwitter} /> <br />
-                            <Link className='hover:text-blue-500 font-bold' href={"https://twitter.com/xmrrabbittx"}>Twitter</Link>
-
-                        </div>
-                        <div className='grid-cols-1 text-center'>
                             
                             <FontAwesomeIcon style={{width:"50px", height:"50px", color:"#e83a23"}} icon={faGoogle} /> <br />
                             <Link className='hover:text-blue-500 font-bold' href={"mailto:xmrrabbitx@gmail.com"}>Gmail</Link>
-
-
-                        </div>
-
-                        <div className='grid-cols-1 text-center'>
-                            
-                            <FontAwesomeIcon style={{width:"50px", height:"50px", color:"#f0513c"}} icon={faInstagram} /> <br />
-                            <Link className='hover:text-blue-500 font-bold' href={"https://www.instagram.com/xmrrabbitx"}>Instagram</Link>
 
 
                         </div>
