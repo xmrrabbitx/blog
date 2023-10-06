@@ -45,12 +45,12 @@ export default function Recent() {
 
 
   return (
-    <div className=""  key="recent">
+    <div className="lg:w-7/12 w-12/12 "  key="recent">
       
       {groups.map((value,key) => (
         <Link key={key} className='' href={`/articles/${value[0]?.[1].replace(/[^a-zA-Z0-9-]/g, '')}`}>
 
-        <div className=' bg-white rounded-md p-4 mt-5 drop-shadow-sm'>
+        <div className=' bg-white rounded-md p-8 mt-5 drop-shadow-sm'>
           {value.map((item:any,index:any) => (
             
               <div key={index}>

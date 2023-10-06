@@ -18,28 +18,25 @@ export default function Home() {
             <link rel="icon" href="/logos/logo.ico" />
           </Head>
         
-       <div className='container max-w-full'>
-        <div className='grid grid-cols-1'>
-          <div className='w-12/12'>
-            <h2 className='text-center mt-10 text-xl font-semibold'>
-              Recent Articles
-            </h2>
+          <div className='container max-w-full'>
+            <div className='grid grid-cols-1'>
+              <div className='w-12/12'>
+                <h2 className='text-center mt-10 text-xl font-semibold'>
+                  Recent Articles
+                </h2>
+              </div>
+              <div className='flex w-12/12 text-center'>
+                  <div className='lg:w-2/12 w-0'>
+                  </div>
+                  <div className='flex items-center justify-center lg:w-8/12 w-12/12  ml-5 mr-5 md:mlr-5 '>
+                    <Recent />
+                  </div>
+                  <div className='lg:w-2/12 w-0 '>
+                  </div>
+              </div>
+            </div>
           </div>
-          <div className='w-12/12 text-center grid grid-cols-3'>
-              <div className=' lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
-              </div>
-              <div className='lg:col-span-1 lg:ml-0 lg:mr-0 ml-5 mr-5 md:col-span-3 md:mlr-5 sm:col-span-3 col-span-3'>
-                <Recent />
-              </div>
-              <div className='lg:col-span-1 md:col-span-0 sm:col-span-0 col-span-0'>
-              </div>
-          </div>
-       </div>
-       
-      
-      </div>
-      
-    </>
+      </>
   )
 }
 
