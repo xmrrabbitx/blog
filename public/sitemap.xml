@@ -46,4 +46,10 @@
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/cash-back-apps-as-a-loyalty-program-in-online-retail-businesses-is-it-worth-it</loc>
+       <lastmod>2023-10-09</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.80</priority>
+     </url>
   </urlset>

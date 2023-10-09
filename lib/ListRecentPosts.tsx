@@ -25,6 +25,9 @@ const matterResult:any = {"content":"",
     "title-3":"tarpit-of-ideas:-how-can-we-know-a-startup-idea-is-a-good-idea?",
     "description-3":"A tarpit is a place with water and mud where animals become entangled...",
     "date-3":"10-09-2023",
+    "title-4":"cash-back-apps-as-a-loyalty-program-in-online-retail-businesses:-is-it-worth-it?",
+    "description-4":"Cashback apps give you back a portion of your purchase in fiat or cryptocurrency. Happy customers mean more purchases...",
+    "date-4":"09-10-2023",
 
     
 },
