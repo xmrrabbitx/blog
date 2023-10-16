@@ -39,13 +39,21 @@ To install <Link className="text-blue-500" href="https://www.npmjs.com/package/d
 
                         <Paragraph text={<><b>Usage</b> <br/> To use dvote-polygon, you first need to import the Dvote class from the library: <br/> <CodeBlock title="" code={`import {Dvote} from 'dvote-polygon'`} description=""/></>} />
 
-                        <Paragraph text={<>Next, you can create a new instance of the Dvote class: <br/> <CodeBlock title="" code={`const endpoint = "http://127.0.0.1:8545" // your provider
-const mnemonic = "Mnemonic" // your wallet mnemonic
 
-const dv = new Dvote(mnemonic , endpoint ) // new instance
+                        <Paragraph text={<>First you need to set your PRIVATE KEY in .env file in your root project:
+                        <br/> 
+                        <CodeBlock title="" code={`PRIVATE_KEY = YOUR WALLET PRIVATE KEY`} description="" /> </>} />
+
+                        <Paragraph text={<>Next, you can create a new instance of the Dvote class: 
+                        <br/> 
+                        <CodeBlock title="" code={`const endpoint = "http://127.0.0.1:8545" // your provider
+
+const dv = new Dvote(endpoint, false) // new instance
 `} description="" /> </>} />
 
-                        <Paragraph text={<>You will need to replace the endpoint and mnemonic variables with your own values. The endpoint should be the URL of your Polygon network provider (use  <Link className="text-blue-500" href="https://quicknode.com/"> quicknode </Link> provider), and the mnemonic should be the seed phrase of your wallet.</>} />
+                        <Paragraph text={<>the second parameter is optional, the default value is false, if set it to true, it deploys new contract instead of using the previous one.</>} />
+
+                        <Paragraph text={<>You will need to replace the endpoint variable with your own endpoint provider. The endpoint should be the URL of your Polygon network provider (<Link className="text-blue-500" href="https://quicknode.com/"> quicknode </Link>) provider, or What provider you want to.</>} />
 
                         <Paragraph text={<><b>Compile</b> <br/>
 
@@ -61,28 +69,25 @@ The compile() method returns an object with the ABI and bytecode of the compiled
 
 Once you have compiled the smart contract, you can deploy it to the Polygon network using the deploy() method:
 
-<CodeBlock title="" code={`let fromAddress = "Your Wallet Address"
+<CodeBlock title="" code={`dv.deploy(abi, bytecode).then(data=>{
 
-dv.deploy(fromAddress, abi, bytecode).then(data=>{
-
-    console.log(data)
+    result = data
 
 })
 `} description="" />
-Replace "Your Wallet Address" with the address of your wallet like   <Link className="text-blue-500" href="https://metamask.io" >Metamask</Link>. The deploy() method returns a promise object that resolves to the address of the deployed smart contract.
+The deploy() method returns a promise object that resolves to the address of the deployed smart contract.
 </>} />
 
                     <Paragraph text={<><b>Create a Poll</b> <br/>
 
 To create a new poll, you can call the createVote() method on your Dvote instance:
 
-<CodeBlock title="" code={`let fromAddress = "Your Wallet Address"
-let voteName = "EBAY"
+<CodeBlock title="" code={`let voteName = "EBAY"
 let voteOptions = ["perfect", "good", "bad", "worst"]
 
-dv.createVote(voteName, voteOptions, fromAddress).then(data=>{
+dv.createVote(voteName, voteOptions).then(data=>{
 
-    console.log(data)
+    result = data
 
 })
 `} description="" />
@@ -101,7 +106,7 @@ let voteOptions = "perfect"
 
 dv.addVote(voteName, voteOptions, fromAddress).then(data=>{
 
-    console.log(data)
+    result = data
     
 })
 `} description="" />
@@ -120,7 +125,7 @@ let voteName = "EBAY"
 
 dv.voteResult(voteName, fromAddress).then((data:any)=>{
 
-    console.log(data)
+    result = data
 
 })
 `} description="" />
