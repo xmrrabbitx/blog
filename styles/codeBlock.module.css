@@ -1,6 +1,9 @@
 .codeblock{
-   overflow-x: hidden;
+   overflow-x: scroll;
    overflow-y: hidden;
+}
+.codeblock::-webkit-scrollbar {
+   display: visible;
 }
 
 .escape {
