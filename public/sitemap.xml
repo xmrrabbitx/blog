@@ -52,4 +52,10 @@
        <changefreq>daily</changefreq>
        <priority>0.80</priority>
      </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/how-to-handle-errors-of-smart-contracts-on-web3js-handleRevert</loc>
+       <lastmod>2023-10-19</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.80</priority>
+     </url>
 </urlset>
