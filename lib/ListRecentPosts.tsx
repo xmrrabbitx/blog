@@ -28,7 +28,7 @@ const matterResult:any = {"content":"",
     "title-5":"cash-back-apps-as-a-loyalty-program-in-online-retail-businesses:-is-it-worth-it?",
     "description-5":"Cashback apps give you back a portion of your purchase in fiat or cryptocurrency. Happy customers mean more purchases...",
     "date-5":"09-10-2023",
-    "title-6":"how-to-handle-errors-of-smart-contracts-on-web3js:-(handlRevert)",
+    "title-6":"how-to-handle-errors-of-smart-contracts-on-web3js:-(handleRevert)",
     "description-6":"So there are 2 ways to get the error on reverting the EVM network response...",
     "date-6":"19-10-2023",
     
