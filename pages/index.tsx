@@ -21,7 +21,7 @@ export default function Home() {
           <div className='container max-w-full'>
             <div className='grid grid-cols-1'>
               <div className='w-12/12'>
-                <h2 className='text-center mt-10 text-xl font-semibold'>
+                <h2 className='text-center mt-10 text-xl '>
                   Recent Articles
                 </h2>
               </div>

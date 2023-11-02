@@ -14,48 +14,54 @@
        <loc>https://blog.mrrabbit.info/articles</loc>
        <lastmod>2023-04-03</lastmod>
        <changefreq>daily</changefreq>
-        <priority>0.80</priority>
+        <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-fetch-nft-transaction-logs-using-php</loc>
        <lastmod>2023-04-03</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-rank-top-selling-nfts-using-php</loc>
        <lastmod>2023-04-03</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/retrieve-top-10-selling-nft-using-php-and-infura</loc>
        <lastmod>2023-04-05</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/introduction-to-dvote-polygon-library-a-tutorial</loc>
        <lastmod>2023-09-10</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/tarpit-of-ideas-how-can-we-know-a-startup-idea-is-a-good-idea</loc>
        <lastmod>2023-09-10</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/cash-back-apps-as-a-loyalty-program-in-online-retail-businesses-is-it-worth-it</loc>
        <lastmod>2023-10-09</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
      </url>
      <url>
        <loc>https://blog.mrrabbit.info/articles/how-to-handle-errors-of-smart-contracts-on-web3js-handleRevert</loc>
        <lastmod>2023-10-19</lastmod>
        <changefreq>daily</changefreq>
-       <priority>0.80</priority>
+       <priority>1.00</priority>
+     </url>
+     <url>
+       <loc>https://blog.mrrabbit.info/articles/pure-SQL-is-10x-faster-than-PHP-use-SQL-queries-as-much-as-you-can</loc>
+       <lastmod>2023-11-02</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.00</priority>
      </url>
 </urlset>
