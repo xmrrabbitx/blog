@@ -21,7 +21,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <div className='w-12/12 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 lg:pr-28 pt-5 lg:text-base md:text-base text-xs flex lg:justify-end justify-center '>
+                <div className='w-12/12 lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-2 lg:pr-28 pt-5 lg:text-base md:text-base text-xs flex lg:justify-end justify-center'>
                     <span>
                         <Link href="/">
                             Home
